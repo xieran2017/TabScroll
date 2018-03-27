@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52408E292068A4670080EE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E282068A4670080EE34 /* AppDelegate.swift */; };
+		52408E2B2068A4670080EE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E2A2068A4670080EE34 /* ViewController.swift */; };
+		52408E2E2068A4670080EE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52408E2C2068A4670080EE34 /* Main.storyboard */; };
+		52408E302068A4670080EE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52408E2F2068A4670080EE34 /* Assets.xcassets */; };
+		52408E332068A4670080EE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52408E312068A4670080EE34 /* LaunchScreen.storyboard */; };
+		52408E3E2068A4670080EE34 /* TabScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E3D2068A4670080EE34 /* TabScrollTests.swift */; };
+		52408E492068A4670080EE34 /* TabScrollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E482068A4670080EE34 /* TabScrollUITests.swift */; };
+		74B319066F4960A2842C4CE3 /* Pods_TabScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A81AF4F07D827EAFCE78959 /* Pods_TabScroll.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52408E3A2068A4670080EE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52408E1D2068A4660080EE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52408E242068A4660080EE34;
+			remoteInfo = TabScroll;
+		};
+		52408E452068A4670080EE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52408E1D2068A4660080EE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52408E242068A4660080EE34;
+			remoteInfo = TabScroll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01829641468B662980C239E8 /* Pods-TabScroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabScroll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabScroll/Pods-TabScroll.debug.xcconfig"; sourceTree = "<group>"; };
+		52408E252068A4660080EE34 /* TabScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52408E282068A4670080EE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52408E2A2068A4670080EE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52408E2D2068A4670080EE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52408E2F2068A4670080EE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52408E322068A4670080EE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52408E342068A4670080EE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52408E392068A4670080EE34 /* TabScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52408E3D2068A4670080EE34 /* TabScrollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScrollTests.swift; sourceTree = "<group>"; };
+		52408E3F2068A4670080EE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52408E442068A4670080EE34 /* TabScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52408E482068A4670080EE34 /* TabScrollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScrollUITests.swift; sourceTree = "<group>"; };
+		52408E4A2068A4670080EE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A81AF4F07D827EAFCE78959 /* Pods_TabScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF31C21E55DCDF448D5D8B05 /* Pods-TabScroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabScroll.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabScroll/Pods-TabScroll.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52408E222068A4660080EE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B319066F4960A2842C4CE3 /* Pods_TabScroll.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52408E362068A4670080EE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52408E412068A4670080EE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52408E1C2068A4660080EE34 = {
+			isa = PBXGroup;
+			children = (
+				52408E272068A4660080EE34 /* TabScroll */,
+				52408E3C2068A4670080EE34 /* TabScrollTests */,
+				52408E472068A4670080EE34 /* TabScrollUITests */,
+				52408E262068A4660080EE34 /* Products */,
+				DD643188BD8342DB857E0BA9 /* Pods */,
+				ADFE06011B763C4683E53991 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52408E262068A4660080EE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52408E252068A4660080EE34 /* TabScroll.app */,
+				52408E392068A4670080EE34 /* TabScrollTests.xctest */,
+				52408E442068A4670080EE34 /* TabScrollUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52408E272068A4660080EE34 /* TabScroll */ = {
+			isa = PBXGroup;
+			children = (
+				52408E282068A4670080EE34 /* AppDelegate.swift */,
+				52408E2A2068A4670080EE34 /* ViewController.swift */,
+				52408E2C2068A4670080EE34 /* Main.storyboard */,
+				52408E2F2068A4670080EE34 /* Assets.xcassets */,
+				52408E312068A4670080EE34 /* LaunchScreen.storyboard */,
+				52408E342068A4670080EE34 /* Info.plist */,
+			);
+			path = TabScroll;
+			sourceTree = "<group>";
+		};
+		52408E3C2068A4670080EE34 /* TabScrollTests */ = {
+			isa = PBXGroup;
+			children = (
+				52408E3D2068A4670080EE34 /* TabScrollTests.swift */,
+				52408E3F2068A4670080EE34 /* Info.plist */,
+			);
+			path = TabScrollTests;
+			sourceTree = "<group>";
+		};
+		52408E472068A4670080EE34 /* TabScrollUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52408E482068A4670080EE34 /* TabScrollUITests.swift */,
+				52408E4A2068A4670080EE34 /* Info.plist */,
+			);
+			path = TabScrollUITests;
+			sourceTree = "<group>";
+		};
+		ADFE06011B763C4683E53991 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A81AF4F07D827EAFCE78959 /* Pods_TabScroll.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD643188BD8342DB857E0BA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01829641468B662980C239E8 /* Pods-TabScroll.debug.xcconfig */,
+				EF31C21E55DCDF448D5D8B05 /* Pods-TabScroll.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52408E242068A4660080EE34 /* TabScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52408E4D2068A4670080EE34 /* Build configuration list for PBXNativeTarget "TabScroll" */;
+			buildPhases = (
+				6B80DC4EA8A1131F82FDA69C /* [CP] Check Pods Manifest.lock */,
+				52408E212068A4660080EE34 /* Sources */,
+				52408E222068A4660080EE34 /* Frameworks */,
+				52408E232068A4660080EE34 /* Resources */,
+				3E9A02581547E1F233C48085 /* [CP] Embed Pods Frameworks */,
+				CC972145AEDFF449C3BF6854 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabScroll;
+			productName = TabScroll;
+			productReference = 52408E252068A4660080EE34 /* TabScroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52408E382068A4670080EE34 /* TabScrollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52408E502068A4670080EE34 /* Build configuration list for PBXNativeTarget "TabScrollTests" */;
+			buildPhases = (
+				52408E352068A4670080EE34 /* Sources */,
+				52408E362068A4670080EE34 /* Frameworks */,
+				52408E372068A4670080EE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52408E3B2068A4670080EE34 /* PBXTargetDependency */,
+			);
+			name = TabScrollTests;
+			productName = TabScrollTests;
+			productReference = 52408E392068A4670080EE34 /* TabScrollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52408E432068A4670080EE34 /* TabScrollUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52408E532068A4670080EE34 /* Build configuration list for PBXNativeTarget "TabScrollUITests" */;
+			buildPhases = (
+				52408E402068A4670080EE34 /* Sources */,
+				52408E412068A4670080EE34 /* Frameworks */,
+				52408E422068A4670080EE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52408E462068A4670080EE34 /* PBXTargetDependency */,
+			);
+			name = TabScrollUITests;
+			productName = TabScrollUITests;
+			productReference = 52408E442068A4670080EE34 /* TabScrollUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52408E1D2068A4660080EE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = xieran;
+				TargetAttributes = {
+					52408E242068A4660080EE34 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					52408E382068A4670080EE34 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52408E242068A4660080EE34;
+					};
+					52408E432068A4670080EE34 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52408E242068A4660080EE34;
+					};
+				};
+			};
+			buildConfigurationList = 52408E202068A4660080EE34 /* Build configuration list for PBXProject "TabScroll" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52408E1C2068A4660080EE34;
+			productRefGroup = 52408E262068A4660080EE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52408E242068A4660080EE34 /* TabScroll */,
+				52408E382068A4670080EE34 /* TabScrollTests */,
+				52408E432068A4670080EE34 /* TabScrollUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52408E232068A4660080EE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52408E332068A4670080EE34 /* LaunchScreen.storyboard in Resources */,
+				52408E302068A4670080EE34 /* Assets.xcassets in Resources */,
+				52408E2E2068A4670080EE34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52408E372068A4670080EE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52408E422068A4670080EE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E9A02581547E1F233C48085 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TabScroll/Pods-TabScroll-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TabScroll/TabScroll.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TabScroll.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabScroll/Pods-TabScroll-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B80DC4EA8A1131F82FDA69C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabScroll-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC972145AEDFF449C3BF6854 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabScroll/Pods-TabScroll-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52408E212068A4660080EE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52408E2B2068A4670080EE34 /* ViewController.swift in Sources */,
+				52408E292068A4670080EE34 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52408E352068A4670080EE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52408E3E2068A4670080EE34 /* TabScrollTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52408E402068A4670080EE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52408E492068A4670080EE34 /* TabScrollUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52408E3B2068A4670080EE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52408E242068A4660080EE34 /* TabScroll */;
+			targetProxy = 52408E3A2068A4670080EE34 /* PBXContainerItemProxy */;
+		};
+		52408E462068A4670080EE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52408E242068A4660080EE34 /* TabScroll */;
+			targetProxy = 52408E452068A4670080EE34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52408E2C2068A4670080EE34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52408E2D2068A4670080EE34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52408E312068A4670080EE34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52408E322068A4670080EE34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52408E4B2068A4670080EE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52408E4C2068A4670080EE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52408E4E2068A4670080EE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01829641468B662980C239E8 /* Pods-TabScroll.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TabScroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.randomMediaPlayer.TabScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52408E4F2068A4670080EE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF31C21E55DCDF448D5D8B05 /* Pods-TabScroll.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TabScroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.randomMediaPlayer.TabScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52408E512068A4670080EE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TabScrollTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.randomMediaPlayer.TabScrollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabScroll.app/TabScroll";
+			};
+			name = Debug;
+		};
+		52408E522068A4670080EE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TabScrollTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.randomMediaPlayer.TabScrollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabScroll.app/TabScroll";
+			};
+			name = Release;
+		};
+		52408E542068A4670080EE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TabScrollUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.randomMediaPlayer.TabScrollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TabScroll;
+			};
+			name = Debug;
+		};
+		52408E552068A4670080EE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TabScrollUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.randomMediaPlayer.TabScrollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TabScroll;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52408E202068A4660080EE34 /* Build configuration list for PBXProject "TabScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52408E4B2068A4670080EE34 /* Debug */,
+				52408E4C2068A4670080EE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52408E4D2068A4670080EE34 /* Build configuration list for PBXNativeTarget "TabScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52408E4E2068A4670080EE34 /* Debug */,
+				52408E4F2068A4670080EE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52408E502068A4670080EE34 /* Build configuration list for PBXNativeTarget "TabScrollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52408E512068A4670080EE34 /* Debug */,
+				52408E522068A4670080EE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52408E532068A4670080EE34 /* Build configuration list for PBXNativeTarget "TabScrollUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52408E542068A4670080EE34 /* Debug */,
+				52408E552068A4670080EE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52408E1D2068A4660080EE34 /* Project object */;
+}
