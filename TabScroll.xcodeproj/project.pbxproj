@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522692B0206A4F2900AFB096 /* TabScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522692AF206A4F2900AFB096 /* TabScroll.swift */; };
 		52408E292068A4670080EE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E282068A4670080EE34 /* AppDelegate.swift */; };
 		52408E2B2068A4670080EE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52408E2A2068A4670080EE34 /* ViewController.swift */; };
 		52408E2E2068A4670080EE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52408E2C2068A4670080EE34 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		01829641468B662980C239E8 /* Pods-TabScroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabScroll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabScroll/Pods-TabScroll.debug.xcconfig"; sourceTree = "<group>"; };
+		522692AF206A4F2900AFB096 /* TabScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabScroll.swift; sourceTree = "<group>"; };
 		52408E252068A4660080EE34 /* TabScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52408E282068A4670080EE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52408E2A2068A4670080EE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522692AE206A4F2900AFB096 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				522692AF206A4F2900AFB096 /* TabScroll.swift */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
 		52408E1C2068A4660080EE34 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		52408E272068A4660080EE34 /* TabScroll */ = {
 			isa = PBXGroup;
 			children = (
+				522692AE206A4F2900AFB096 /* Source */,
 				52408E282068A4670080EE34 /* AppDelegate.swift */,
 				52408E2A2068A4670080EE34 /* ViewController.swift */,
 				52408E2C2068A4670080EE34 /* Main.storyboard */,
@@ -344,6 +355,7 @@
 			files = (
 				52408E2B2068A4670080EE34 /* ViewController.swift in Sources */,
 				52408E292068A4670080EE34 /* AppDelegate.swift in Sources */,
+				522692B0206A4F2900AFB096 /* TabScroll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

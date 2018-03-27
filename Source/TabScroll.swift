@@ -9,10 +9,11 @@
 import UIKit
 import SnapKit
 
-class TabScroll: UIScrollView {
+public class TabScroll: UIScrollView {
     let leftMargin: CGFloat = 16
     let spacing: CGFloat = 32
-    var height: CGFloat = 42
+    var tHeight: CGFloat = 0
+    var font = UIFont.systemFont(ofSize: 15)
     
     private var buttons = [TabButton]()
     
@@ -22,18 +23,18 @@ class TabScroll: UIScrollView {
             clean()
             
             for (index , title) in (titles ?? []).enumerated() {
-                let button = TabButton(title: title)
+                let button = TabButton(title: title, font: self.font)
                 button.isSelected = index == 0 ? true : false
                 button.tag = index
                 button.addTarget(self, action: #selector(click), for: .touchUpInside)
                 addSubview(button)
-
+                
                 let originX = index == 0 ? self.leftMargin : buttons[index - 1].frame.maxX + self.spacing
-                button.frame = CGRect(x: originX, y: 0, width: button.frame.width, height: self.frame.height)
+                button.frame = CGRect(x: originX, y: 0, width: button.frame.width, height: self.frame.height - 1)
                 buttons.append(button)
             }
-
-            self.contentSize = CGSize(width: (buttons.last?.frame.maxX ?? 0) + leftMargin, height: self.height)
+            
+            self.contentSize = CGSize(width: (buttons.last?.frame.maxX ?? 0) + leftMargin, height: self.tHeight)
         }
     }
     
@@ -48,17 +49,19 @@ class TabScroll: UIScrollView {
         }
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
+        
+        tHeight = frame.size.height
         
         backgroundColor = .white
         
-        let line = UIView(frame: CGRect(x: 0, y: height, width: UIScreen.main.bounds.width, height: 1))
+        let line = UIView(frame: CGRect(x: 0, y: tHeight - 1, width: frame.size.width, height: 1))
         line.backgroundColor = UIColor(red: 244.0/255.0, green: 244.0/255.0, blue: 244.0/255.0, alpha: 1)
         addSubview(line)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -74,7 +77,7 @@ class TabScroll: UIScrollView {
         let button = buttons[index]
         
         let maxOffsetX = contentSize.width - frame.width
-
+        
         if button.center.x > self.center.x , button.center.x - frame.width / 2 <= maxOffsetX {
             UIView.animate(withDuration: 0.2, animations: {
                 self.setContentOffset(CGPoint(x: button.center.x - self.center.x, y: 0), animated: false)
@@ -95,8 +98,6 @@ class TabScroll: UIScrollView {
 }
 
 private class TabButton: UIButton {
-    static let font = UIFont.systemFont(ofSize: 15)
-    
     lazy var line: UIView = {
         let v = UIView()
         v.backgroundColor = UIColor(red: 1, green: 102.0/255.0, blue: 0, alpha: 1)
@@ -105,20 +106,19 @@ private class TabButton: UIButton {
         return v
     }()
     
-    init(title: String) {
+    init(title: String, font: UIFont) {
         super.init(frame: .zero)
         
         self.setTitle(title, for: .normal)
         self.setTitleColor(UIColor(red: 119.0/255.0, green: 119.0/255.0, blue: 119.0/255.0, alpha: 1), for: .normal)
         self.setTitleColor(UIColor(red: 1, green: 102.0/255.0, blue: 0, alpha: 1), for: .selected)
         self.setTitleColor(UIColor(red: 1, green: 102.0/255.0, blue: 0, alpha: 1), for: [.selected , .highlighted])
-        self.titleLabel?.font = TabButton.font
+        self.titleLabel?.font = font
         
-        self.frame.size.width = (title as NSString).boundingRect(with: CGSize(width: 1000, height: 1000), options: [.usesLineFragmentOrigin], attributes: [NSAttributedStringKey.font : TabButton.font], context: nil).size.width + 1
+        self.frame.size.width = (title as NSString).boundingRect(with: CGSize(width: 1000, height: 1000), options: [.usesLineFragmentOrigin], attributes: [NSAttributedStringKey.font : font], context: nil).size.width + 1
         
         line.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-2)
+            make.bottom.centerX.equalToSuperview()
             make.height.equalTo(2)
             make.width.equalTo(self.frame.size.width)
         }
@@ -134,3 +134,4 @@ private class TabButton: UIButton {
         }
     }
 }
+
