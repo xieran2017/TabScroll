@@ -10,6 +10,7 @@ class MyViewController: UIViewController {
         super.viewDidLoad()
 
         sc.font = UIFont.systemFont(ofSize: 16)
+        sc.titles = ["1000","2000","3000","4000","5000","6000","7000"]
         self.view.addSubview(sc)
     }
 
