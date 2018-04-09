@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         
         let tabScroll = TabScroll(frame: CGRect(x: 0, y: 100, width: view.frame.width, height: 100))
         tabScroll.titles = ["1000","2000","3000","4000","5000","6000","7000"]
+        tabScroll.itemSelectedBlock = {(index) in
+            print(index)
+        }
         view.addSubview(tabScroll)
     }
     

@@ -10,9 +10,9 @@ import UIKit
 import SnapKit
 
 public class TabScroll: UIScrollView {
-    var tHeight: CGFloat = 0
     var font = UIFont.systemFont(ofSize: 15)
     
+    private var tHeight: CGFloat = 0
     private var buttons = [TabButton]()
     
     var itemSelectedBlock: ((_ index: Int) -> Void)?
@@ -64,7 +64,7 @@ public class TabScroll: UIScrollView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func click(sender: UIButton) {
+    @objc private func click(sender: UIButton) {
         buttons[selectedIndex].isSelected = false
         selectedIndex = sender.tag
         buttons[selectedIndex].isSelected = true
@@ -88,7 +88,7 @@ public class TabScroll: UIScrollView {
         }
     }
     
-    func clean() {
+    private func clean() {
         for (index , btn) in buttons.enumerated().reversed() {
             btn.removeFromSuperview()
             buttons.remove(at: index)
