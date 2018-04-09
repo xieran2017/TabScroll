@@ -14,5 +14,8 @@ class MyViewController: UIViewController {
         self.view.addSubview(sc)
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        sc.selectedIndex = 0
+    }
 }
 ```
