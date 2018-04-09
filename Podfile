@@ -6,6 +6,5 @@ inhibit_all_warnings!   #忽略所有警告
 target ‘TabScroll’ do
     
     pod 'SnapKit'
-    pod 'TabScroll'
     
 end

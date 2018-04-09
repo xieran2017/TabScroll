@@ -1,16 +1,12 @@
 PODS:
   - SnapKit (4.0.0)
-  - TabScroll (1.0.4):
-    - SnapKit (~> 4.0.0)
 
 DEPENDENCIES:
   - SnapKit
-  - TabScroll
 
 SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  TabScroll: 7eb32f1df8e34cef142deaf5c580725d1d47242a
 
-PODFILE CHECKSUM: 05b8ec5e87a5e09efa0bfa8b76d93ea477aabdce
+PODFILE CHECKSUM: f4b544615cff6b5193e3ae1f762ac4d79816a69f
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

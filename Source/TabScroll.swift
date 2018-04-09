@@ -10,8 +10,6 @@ import UIKit
 import SnapKit
 
 public class TabScroll: UIScrollView {
-    let leftMargin: CGFloat = 16
-    let spacing: CGFloat = 32
     var tHeight: CGFloat = 0
     var font = UIFont.systemFont(ofSize: 15)
     
@@ -21,20 +19,19 @@ public class TabScroll: UIScrollView {
     var titles: [String]? {
         didSet {
             clean()
-            
+
             for (index , title) in (titles ?? []).enumerated() {
                 let button = TabButton(title: title, font: self.font)
-                button.isSelected = index == 0 ? true : false
                 button.tag = index
+                button.isSelected = button.tag == selectedIndex ? true : false
                 button.addTarget(self, action: #selector(click), for: .touchUpInside)
                 addSubview(button)
                 
-                let originX = index == 0 ? self.leftMargin : buttons[index - 1].frame.maxX + self.spacing
+                let originX = index == 0 ? 0 : buttons[index - 1].frame.maxX
                 button.frame = CGRect(x: originX, y: 0, width: button.frame.width, height: self.frame.height - 1)
                 buttons.append(button)
             }
-            
-            self.contentSize = CGSize(width: (buttons.last?.frame.maxX ?? 0) + leftMargin, height: self.tHeight)
+            self.contentSize = CGSize(width: buttons.last?.frame.maxX ?? 0, height: self.tHeight)
         }
     }
     
@@ -54,6 +51,8 @@ public class TabScroll: UIScrollView {
         
         tHeight = frame.size.height
         
+        showsHorizontalScrollIndicator = false
+        showsVerticalScrollIndicator = false
         backgroundColor = .white
         
         let line = UIView(frame: CGRect(x: 0, y: tHeight - 1, width: frame.size.width, height: 1))
@@ -73,7 +72,7 @@ public class TabScroll: UIScrollView {
         itemSelectedBlock?(sender.tag)
     }
     
-    func scrollItemToCenter(atIndex index: Int) {
+    private func scrollItemToCenter(atIndex index: Int) {
         let button = buttons[index]
         
         let maxOffsetX = contentSize.width - frame.width
@@ -84,7 +83,7 @@ public class TabScroll: UIScrollView {
             })
         } else {
             UIView.animate(withDuration: 0.2, animations: {
-                self.scrollRectToVisible(CGRect(x: button.frame.minX - self.leftMargin, y: 0, width: button.frame.width + 2 * self.leftMargin, height: button.frame.height), animated: false)
+                self.scrollRectToVisible(CGRect(x: button.frame.minX, y: 0, width: button.frame.width, height: button.frame.height), animated: false)
             })
         }
     }
@@ -98,6 +97,8 @@ public class TabScroll: UIScrollView {
 }
 
 private class TabButton: UIButton {
+    let margin: CGFloat = 16.0
+    
     lazy var line: UIView = {
         let v = UIView()
         v.backgroundColor = UIColor(red: 1, green: 102.0/255.0, blue: 0, alpha: 1)
@@ -115,12 +116,12 @@ private class TabButton: UIButton {
         self.setTitleColor(UIColor(red: 1, green: 102.0/255.0, blue: 0, alpha: 1), for: [.selected , .highlighted])
         self.titleLabel?.font = font
         
-        self.frame.size.width = (title as NSString).boundingRect(with: CGSize(width: 1000, height: 1000), options: [.usesLineFragmentOrigin], attributes: [NSAttributedStringKey.font : font], context: nil).size.width + 1
+        self.frame.size.width = (title as NSString).boundingRect(with: CGSize(width: 1000, height: 1000), options: [.usesLineFragmentOrigin], attributes: [NSAttributedStringKey.font : font], context: nil).size.width + 1 + 2 * margin
         
         line.snp.makeConstraints { (make) in
             make.bottom.centerX.equalToSuperview()
             make.height.equalTo(2)
-            make.width.equalTo(self.frame.size.width)
+            make.width.equalTo(self.frame.size.width - 2 * margin)
         }
     }
     
@@ -134,4 +135,3 @@ private class TabButton: UIButton {
         }
     }
 }
-

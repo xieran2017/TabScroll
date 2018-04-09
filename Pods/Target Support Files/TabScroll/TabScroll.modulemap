@@ -1,6 +1,0 @@
-framework module TabScroll {
-  umbrella header "TabScroll-umbrella.h"
-
-  export *
-  module * { export * }
-}
